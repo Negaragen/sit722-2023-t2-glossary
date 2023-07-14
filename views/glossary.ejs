@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DevOps Glossary</title>
+    <style>
+      body {
+        background-color: navy;
+        color: white;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: "Calibri Light", "Arial", sans-serif;
+        background-color: white; /* Set the background color of the table */
+        color: black; /* Set the text color of the table */
+      }
+      th, td {
+        border: 1px solid darkgray;
+        padding: 8px;
+        max-width: 400px; /* Adjust the width as needed */
+        word-wrap: break-word;
+      }
+      th {
+        background-color: lightblue;
+      }
+      tr.hovered-row {
+        background-color: lightgray; /* Set the background color for the hovered row */
+      }
+    </style>
+    <script>
+      // JavaScript code to handle hover effect on table rows
+      document.addEventListener("DOMContentLoaded", function() {
+        var rows = document.getElementsByTagName("tr");
+        for (var i = 0; i < rows.length; i++) {
+          rows[i].addEventListener("mouseover", function() {
+            this.classList.add("hovered-row");
+          });
+          rows[i].addEventListener("mouseout", function() {
+            this.classList.remove("hovered-row");
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>DevOps Glossary</h1>
+    <table>
+      <tr>
+        <th>Number</th>
+        <th>Term</th>
+        <th>Definition</th>
+        <th>Reference</th>
+      </tr>
+      <% glossary.forEach((item, index) => { %>
+      <tr>
+        <td><%= index + 1 %></td>
+        <td><%= item.term %></td>
+        <td><%= item.definition %></td>
+        <td><%= item.reference %></td>
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
