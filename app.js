@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// view engine setup
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -47,7 +47,7 @@ const app = express();
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
 
-// Define your data (terms, definitions, and references)
+
 const glossary = [
   { term: 'ARA', definition: 'An automated procedure called application release automation (ARA) automatically bundles and releases an application or application updates from the development stage to the production stage. With code testing and security features, ARA improves the software development and application delivery processes. A model-driven continuous deployment procedure is supported by ARA.', reference: '“What is application release automation (ARA)? | Definition from TechTarget.” https://www.techtarget.com/searchitoperations/definition/application-release-automation-ARA#:~:text=Application%20release%20automation%20(ARA)%20is,environment%20management%20and%20modeling%20tools. (accessed Jul. 13, 2023).' },
   { term: 'Artifact', definition: 'Any deliverable connected with a project that aids in describing the purpose, architecture, and layout of the software being created is referred to as an artefact.', reference: '“DevOps DevOps Terminology: A Glossary - Plutora.” https://www.plutora.com/devops-at-scale/terminology-glossary#:~:text=Artifact,of%20the%20software%20being%20developed. (accessed Jul. 13, 2023).' },
@@ -69,7 +69,7 @@ app.get('/', (req, res) => {
   res.render('glossary', { glossary });
 });
 
-// Start the server
+
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
