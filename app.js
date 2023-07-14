@@ -18,6 +18,9 @@ const glossary = [
   { term: 'Deployment Pipline', definition: 'The collection of automated procedures and instruments known as a DevOps pipeline is used by the development and operations teams to compile, assemble, test, and deploy software code more quickly and easily. The word "pipeline" doesnt quite match because it is more like an assembly line.', reference: '“What is a Pipeline in DevOps? A Complete Guide | Simplilearn.” https://www.simplilearn.com/what-is-pipeline-in-devops-tools-implementation-article#:~:text=A%20DevOps%20pipeline%20is%20the,software%20code%20faster%20and%20easier. (accessed Jul. 14, 2023).' }
 ];
 
+// Set the view engine to EJS
+app.set('view engine', 'ejs');
+
 // Render the glossary view
 app.get('/', (req, res) => {
   res.render('glossary', { glossary });
