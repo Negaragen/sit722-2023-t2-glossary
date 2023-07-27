@@ -1,10 +1,29 @@
 {
+<<<<<<< HEAD
+  "name": "devops-glossary",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+=======
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2"
+<<<<<<< HEAD
   },
   "scripts": {
     "start": "node app.js"
+=======
+>>>>>>> origin/master
+>>>>>>> 1c14cebd9967d1d8b4a58b8d1c47886d62e2938f
   }
 }
 
